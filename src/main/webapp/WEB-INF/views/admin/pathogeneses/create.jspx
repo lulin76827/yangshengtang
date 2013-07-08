@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_dev_yangshengtang_domain_YstPathogenesis" modelAttribute="ystPathogenesis" path="/admin/pathogeneses" render="${empty dependencies}" z="+yzdELRdRyozhSxxLFj6pmyKmw8=">
+        <field:select field="category" id="c_dev_yangshengtang_domain_YstPathogenesis_category" itemValue="id" items="${ystcategorys}" path="/admin/categorys" z="9wd5I7xaB7+zeChe7cli05WcnT8="/>
+        <field:input field="pathogenesis" id="c_dev_yangshengtang_domain_YstPathogenesis_pathogenesis" required="true" z="XhmxI6n/8hjZ9LGGcugDNhacLPI="/>
+        <field:input field="describ" id="c_dev_yangshengtang_domain_YstPathogenesis_describ" z="YawYgrbEhVqzX8pK/dIlSwztYj4="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_dev_yangshengtang_domain_YstPathogenesis" render="${not empty dependencies}" z="n+k1NeosPC5PYxpTRSs7O6+XbAI="/>
+</div>

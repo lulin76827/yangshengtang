@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_dev_yangshengtang_domain_YstUserCategory" object="${ystusercategory}" path="/admin/usercategorys" z="L+IRYehWFtYTuPNv8arX3x0nqSo=">
+        <field:display field="category" id="s_dev_yangshengtang_domain_YstUserCategory_category" object="${ystusercategory}" z="ov4WoWoYI+SIx038FnTij+M6Xxw="/>
+        <field:display field="user" id="s_dev_yangshengtang_domain_YstUserCategory_user" object="${ystusercategory}" z="LMdrd0cn3r9y+0K50dqHLtzu898="/>
+        <field:display field="tendency" id="s_dev_yangshengtang_domain_YstUserCategory_tendency" object="${ystusercategory}" z="0ON1PC4T2k1/SNsmeqceM85ybhc="/>
+    </page:show>
+</div>

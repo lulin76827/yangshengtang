@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_dev_yangshengtang_domain_YstUser" object="${ystuser}" path="/admin/users" z="nCxoyDKlWNmRX/1PF94rtXuXl/k=">
+        <field:display field="name" id="s_dev_yangshengtang_domain_YstUser_name" object="${ystuser}" z="NWqtw0TX1f34q5v0N5kmwWiEj2c="/>
+        <field:display field="sex" id="s_dev_yangshengtang_domain_YstUser_sex" object="${ystuser}" z="F9/XJmqO+fzouwBz5BaUjSypWXc="/>
+        <field:display field="email" id="s_dev_yangshengtang_domain_YstUser_email" object="${ystuser}" z="CMaD8qUOgHGb6Lz/m/VJPwJRaZA="/>
+        <field:display field="mobile" id="s_dev_yangshengtang_domain_YstUser_mobile" object="${ystuser}" z="O1Ep3xvJ5PwCVDGLMRrgOTWY42c="/>
+        <field:display field="currentAddress" id="s_dev_yangshengtang_domain_YstUser_currentAddress" object="${ystuser}" z="vJzw/+H0U8vTQthBiiVXjQ0Hm0Q="/>
+        <field:display field="birthplace" id="s_dev_yangshengtang_domain_YstUser_birthplace" object="${ystuser}" z="eHAafchlTnh5BiIvRrzuojhIe0M="/>
+        <field:display date="true" dateTimePattern="${ystUser_birthday_date_format}" field="birthday" id="s_dev_yangshengtang_domain_YstUser_birthday" object="${ystuser}" z="vEIpgoP79TMvHpKQZftWtlISChE="/>
+        <field:display field="interest" id="s_dev_yangshengtang_domain_YstUser_interest" object="${ystuser}" z="HkHGpyz7drmZsKg4TDyqEi+0c0c="/>
+        <field:display field="sleepTime" id="s_dev_yangshengtang_domain_YstUser_sleepTime" object="${ystuser}" z="jDdnRGgnYObWr9LZfCMcN9Dl484="/>
+    </page:show>
+</div>

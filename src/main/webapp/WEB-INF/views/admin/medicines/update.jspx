@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_dev_yangshengtang_domain_YstMedicine" modelAttribute="ystMedicine" path="/admin/medicines" versionField="none" z="c7K+QUrhEup0WjNrHSkds/7cUcU=">
+        <field:simple field="ystMedicineSymptoms" id="c_dev_yangshengtang_domain_YstMedicine_ystMedicineSymptoms" messageCode="entity_reference_not_managed" messageCodeAttribute="Yst Medicine Symptom" z="BFzNomdVhl45NR8y3kZvWgrjJ9U="/>
+        <field:select field="category" id="c_dev_yangshengtang_domain_YstMedicine_category" itemValue="id" items="${ystcategorys}" path="/admin/categorys" z="uHqzJM9VAsYbNWCQqg8Q9x5E9eY="/>
+        <field:input field="medicine" id="c_dev_yangshengtang_domain_YstMedicine_medicine" required="true" z="w565GsA9mgdeE/qNLHN3UCRLJgM="/>
+        <field:input field="describ" id="c_dev_yangshengtang_domain_YstMedicine_describ" z="iDE1zPrhKx8sFP32jDRLjBUcoHo="/>
+    </form:update>
+</div>

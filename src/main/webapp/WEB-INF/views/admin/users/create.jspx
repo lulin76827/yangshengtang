@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_dev_yangshengtang_domain_YstUser" modelAttribute="ystUser" path="/admin/users" render="${empty dependencies}" z="4RDh17z79JhSnAZo5WC9XBCOTUc=">
+        <field:simple field="ystAccounts" id="c_dev_yangshengtang_domain_YstUser_ystAccounts" messageCode="entity_reference_not_managed" messageCodeAttribute="Yst Account" z="uNVYAzKLm20QobQ9jAZWsmEGEMc="/>
+        <field:simple field="ystAnswers" id="c_dev_yangshengtang_domain_YstUser_ystAnswers" messageCode="entity_reference_not_managed" messageCodeAttribute="Yst Answer" z="OyegD7ry1EahP2+pMNNzcGu6yp8="/>
+        <field:simple field="ystUserCategories" id="c_dev_yangshengtang_domain_YstUser_ystUserCategories" messageCode="entity_reference_not_managed" messageCodeAttribute="Yst User Category" z="U+G1mscq56C6ah4ef56QLEsi3ac="/>
+        <field:input field="name" id="c_dev_yangshengtang_domain_YstUser_name" required="true" z="XOVoSKmHVYPrJdUHFyrGcX+T09g="/>
+        <field:input field="sex" id="c_dev_yangshengtang_domain_YstUser_sex" required="true" z="m+DTkSfwRmT4d4qXfSxBlNNWSak="/>
+        <field:input field="email" id="c_dev_yangshengtang_domain_YstUser_email" validationMessageCode="field_invalid_email" z="b5pAA81UERNlQnM5XmwxGSMZYgg="/>
+        <field:input field="mobile" id="c_dev_yangshengtang_domain_YstUser_mobile" z="GF8emw3c9o677Bh++Q9oRgC9X3U="/>
+        <field:input field="currentAddress" id="c_dev_yangshengtang_domain_YstUser_currentAddress" z="hcn2KRsKvxyX4/uPIDD6pwZ2k8A="/>
+        <field:input field="birthplace" id="c_dev_yangshengtang_domain_YstUser_birthplace" z="X0HYAdDaKXv1POVAuxELaXqUcWs="/>
+        <field:datetime dateTimePattern="${ystUser_birthday_date_format}" field="birthday" id="c_dev_yangshengtang_domain_YstUser_birthday" z="l3jDL7mBj8NWYE8CUPAImRMODzo="/>
+        <field:input field="interest" id="c_dev_yangshengtang_domain_YstUser_interest" z="dqnYHZKYLYGGGf3ib84SRbTTDS4="/>
+        <field:input field="sleepTime" id="c_dev_yangshengtang_domain_YstUser_sleepTime" validationMessageCode="field_invalid_integer" z="xLoVSfFufQ220bZLY2Lh0gRSvO4="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_dev_yangshengtang_domain_YstUser" render="${not empty dependencies}" z="bhWOSnQSqzpzscuS8l3LFZxeGAM="/>
+</div>

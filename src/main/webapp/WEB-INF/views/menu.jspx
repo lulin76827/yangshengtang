@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" xmlns:spring="http://www.springframework.org/tags" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <spring:message code="label_dev_yangshengtang_domain_ystcategory" htmlEscape="false" var="categoryLabel"/>
+    <spring:message code="label_dev_yangshengtang_domain_ystquestion" htmlEscape="false" var="questionLabel"/>
+    <spring:message code="label_dev_yangshengtang_domain_ystuser" htmlEscape="false" var="userLabel"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_ystcategory" z="OwlZZjIgF/rB2YwflXh949HFsjU=">
+            <menu:item id="i_ystcategory_new" messageCode="global_menu_new" url="/admin/categorys?form" z="7Eo0PTmO7mEPm6W5w2BsC1y1dDU="/>
+            <menu:item id="i_ystcategory_list" messageCode="global_menu_list" url="/admin/categorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="OXeYrm8GfFlX/jkiI14F2aK/pmI="/>
+        </menu:category>
+        <menu:category id="c_ystquestion" z="/u7p58UNHFHYUSQ+O2JMaUHFZYk=">
+            <menu:item id="i_ystquestion_new" messageCode="global_menu_new" url="/admin/questions?form" z="bU3tp/ZAtbgzyJ6jf8mk5JBcDww="/>
+            <menu:item id="i_ystquestion_list" messageCode="global_menu_list" url="/admin/questions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="xGZFfumjW6Jsgznpq+Zwcsq9Kms="/>
+            <menu:item id="fi_ystquestion_category" label="${categoryLabel }" messageCode="global_menu_find" url="/admin/questions?find=ByCategory&amp;form" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_ystmedicine" z="q+tcqmcjhVI1bRKvNqOJs7h53NA=">
+            <menu:item id="i_ystmedicine_new" messageCode="global_menu_new" url="/admin/medicines?form" z="wuA1jxvza2G1caRfF0mITow4KfE="/>
+            <menu:item id="i_ystmedicine_list" messageCode="global_menu_list" url="/admin/medicines?page=1&amp;size=${empty param.size ? 10 : param.size}" z="xbmJVZs2zgn6BGxJyVMg/ng5XHg="/>
+            <menu:item id="fi_ystmedicine_category" label="${categoryLabel }" messageCode="global_menu_find" url="/admin/medicines?find=ByCategory&amp;form" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_ystpathogenesis" z="EGCqqPw6/O3uQe/90aoJKXZZLEg=">
+            <menu:item id="i_ystpathogenesis_new" messageCode="global_menu_new" url="/admin/pathogeneses?form" z="BxAD0ahs5uFMMT7Xxxkn0zlOz1o="/>
+            <menu:item id="i_ystpathogenesis_list" messageCode="global_menu_list" url="/admin/pathogeneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="S8C2HG7Bme22hFuWUi0a4QfGrt4="/>
+            <menu:item id="fi_ystpathogenesis_category" label="${categoryLabel }" messageCode="global_menu_find" url="/admin/pathogeneses?find=ByCategory&amp;form" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_ystmedicinesymptom" z="LaWGUPtyDvc4t/WdYxxLqz5H//g=">
+            <menu:item id="i_ystmedicinesymptom_new" messageCode="global_menu_new" url="/admin/medicinesymptoms?form" z="TQZQrWihkbqP1K93Zzcb+k2bfUI="/>
+            <menu:item id="i_ystmedicinesymptom_list" messageCode="global_menu_list" url="/admin/medicinesymptoms?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HafXerQxWdJdgDNyW1hSRq26NUo="/>
+        </menu:category>
+        <menu:category id="c_ystuser" z="7+yvh60T9WCgk2882jkGpddr4pE=">
+            <menu:item id="i_ystuser_new" messageCode="global_menu_new" url="/admin/users?form" z="A0fCG4hE1+P3EU0lO5neCPxY6W4="/>
+            <menu:item id="i_ystuser_list" messageCode="global_menu_list" url="/admin/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="pm/wvZl/zNbxA30or5714zvluPE="/>
+        </menu:category>
+        <menu:category id="c_ystaccount" z="GqdR5eyZtD3+JucvsCHZqrnl558=">
+            <menu:item id="i_ystaccount_new" messageCode="global_menu_new" url="/admin/accounts?form" z="LjJzoqm5sAdm4B5ODdlxiWakFmo="/>
+            <menu:item id="i_ystaccount_list" messageCode="global_menu_list" url="/admin/accounts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aD6j3FQWPIBrvl60cMRndEllJ1c="/>
+        </menu:category>
+        <menu:category id="c_ystanswer" z="AHx4d7U2PgFfhwvGMUwuRgY1QYY=">
+            <menu:item id="i_ystanswer_new" messageCode="global_menu_new" url="/admin/answers?form" z="CaZujGoaBbqhZfuMngLhYaWB7ao="/>
+            <menu:item id="i_ystanswer_list" messageCode="global_menu_list" url="/admin/answers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P+0kXXIxRb9w72ss+z1tkXOryQQ="/>
+            <menu:item id="fi_ystanswer_question" label="${questionLabel }" messageCode="global_menu_find" url="/admin/answers?find=ByQuestion&amp;form" z="user-managed"/>
+            <menu:item id="fi_ystanswer_user" label="${userLabel }" messageCode="global_menu_find" url="/admin/answers?find=ByUser&amp;form" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_ystusercategory" z="rSKu6dd0g+SceMc+l0tSXlUESnw=">
+            <menu:item id="i_ystusercategory_new" messageCode="global_menu_new" url="/admin/usercategorys?form" z="/rXSiBP4MBEN37IzVe0I5ewVJKo="/>
+            <menu:item id="i_ystusercategory_list" messageCode="global_menu_list" url="/admin/usercategorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="H1XGc7SbjbCuB4rtkm95mRGroaQ="/>
+        </menu:category>
+    </menu:menu>
+</div>

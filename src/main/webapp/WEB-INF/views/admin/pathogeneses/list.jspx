@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_dev_yangshengtang_domain_YstPathogenesis" items="${ystpathogeneses}" z="HD74GiVLOk3S92CXYNRoRytkdDw=">
+        <table:table data="${ystpathogeneses}" id="l_dev_yangshengtang_domain_YstPathogenesis" path="/admin/pathogeneses" z="v3ad07Yfc4k41MFMN9ktxI37L58=">
+            <table:column id="c_dev_yangshengtang_domain_YstPathogenesis_category" property="category" z="ErHyrBRXOp87D/ouE2hjPzKtgZE="/>
+            <table:column id="c_dev_yangshengtang_domain_YstPathogenesis_pathogenesis" property="pathogenesis" z="kw2lNyin9COjHXm3AVraWQ1SmQw="/>
+            <table:column id="c_dev_yangshengtang_domain_YstPathogenesis_describ" property="describ" z="l8gEf/utNSCPyPQhVAWDboqTUlE="/>
+        </table:table>
+    </page:list>
+</div>

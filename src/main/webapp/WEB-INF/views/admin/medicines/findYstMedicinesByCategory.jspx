@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByCategory" id="ff_dev_yangshengtang_domain_YstMedicine" path="/admin/medicines" z="LIHYi49WBzXey1GTyUxc2rMCEgE=">
+        <field:select disableFormBinding="true" field="category" id="f_dev_yangshengtang_domain_YstMedicine_category" itemValue="id" items="${ystcategorys}" path="/admin/categorys" required="true" z="nj7Y9kdCil4JTv5PcHcGRdo1OT8="/>
+    </form:find>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_dev_yangshengtang_domain_YstAccount" items="${ystaccounts}" z="cayOFd8C/c6pnQUWxgdfjiVMKzs=">
+        <table:table data="${ystaccounts}" id="l_dev_yangshengtang_domain_YstAccount" path="/admin/accounts" z="riTvWFQng4HKTN6fBmdf9deQ0Z0=">
+            <table:column id="c_dev_yangshengtang_domain_YstAccount_userDetail" property="userDetail" z="vtg0HiKiHyCgrCu5CPtf37T+Jug="/>
+            <table:column id="c_dev_yangshengtang_domain_YstAccount_username" property="username" z="6kpnynklFE1A1HTk75wqa4gm0V8="/>
+            <table:column id="c_dev_yangshengtang_domain_YstAccount_password" property="password" z="mceKt1gUGuvPDl3UBVwOMN7UmF0="/>
+            <table:column id="c_dev_yangshengtang_domain_YstAccount_administrator" property="administrator" z="j5eHHTZuL/j8AyIxuN8j2rFQNeA="/>
+        </table:table>
+    </page:list>
+</div>
