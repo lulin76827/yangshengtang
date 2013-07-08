@@ -1,0 +1,48 @@
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-07-07 18:56:54
+project --topLevelPackage dev.yangshengtang
+jpa setup --provider HIBERNATE --database MYSQL
+database reverse engineer --schema no-schema-required --package ~.domain --activeRecord true
+finder add --finderName findYstQuestionsByCategory  --class ~.domain.YstQuestion
+finder add --finderName findYstSymptomsByCategory  --class ~.domain.YstSymptom
+finder add --finderName findYstAnswersByQuestion  --class ~.domain.YstAnswer
+finder add --finderName findYstAnswersByUser --class ~.domain.YstAnswer
+finder add --finderName findYstMedicinesByCategory --class ~.domain.YstMedicine
+finder add --finderName findYstPathogenesesByCategory --class ~.domain.YstPathogenesis
+repository jpa --interface ~.repository.YstAnswerRepository --entity ~.domain.YstAnswer
+repository jpa --interface ~.repository.YstMedicineRepository --entity ~.domain.YstMedicine
+repository jpa --interface ~.repository.YstQuestionRepository --entity ~.domain.YstQuestion
+repository jpa --interface ~.repository.YstUserRepository --entity ~.domain.YstUser
+repository jpa --interface ~.repository.YstAccountRepository --entity  ~.domain.YstAccount
+repository jpa --interface ~.repository.YstCategoryRepository --entity  ~.domain.YstCategory
+repository jpa --interface ~.repository.YstMedicineSymptomRepository --entity  ~.domain.YstMedicineSymptom
+repository jpa --interface ~.repository.YstUserCategoryRepository --entity  ~.domain.YstUserCategory
+repository jpa --interface ~.repository.YstPathogenesisRepository --entity  ~.domain.YstPathogenesis
+service type --interface ~.service.YstAnswerService --entity ~.domain.YstAnswer
+service type --interface ~.service.YstMedicineService --entity ~.domain.YstMedicine
+service type --interface ~.service.YstQuestionService --entity ~.domain.YstQuestion
+service type --interface ~.service.YstUserService --entity ~.domain.YstUser
+service type --interface ~.service.YstAccountService --entity  ~.domain.YstAccount
+service type --interface ~.service.YstCategoryService --entity  ~.domain.YstCategory
+service type --interface ~.service.YstMedicineSymptomService --entity  ~.domain.YstMedicineSymptom
+service type --interface ~.service.YstUserCategoryService --entity  ~.domain.YstUserCategory
+service type --interface ~.service.YstPathogenesisService --entity  ~.domain.YstPathogenesis
+web mvc setup
+web mvc scaffold --class ~.web.admin.YstCategoryController --backingType ~.domain.YstCategory --path /admin/categorys
+web mvc scaffold --class ~.web.admin.YstQuestionController --backingType ~.domain.YstQuestion --path /admin/questions
+web mvc scaffold --class ~.web.admin.YstMedicineController --backingType ~.domain.YstMedicine --path /admin/medicines
+web mvc scaffold --class ~.web.admin.YstPathogenesisController --backingType ~.domain.YstPathogenesis --path /admin/pathogeneses
+web mvc scaffold --class ~.web.admin.YstMedicineSymptomController --backingType ~.domain.YstMedicineSymptom --path /admin/medicinesymptoms
+web mvc scaffold --class ~.web.admin.YstUserController --backingType ~.domain.YstUser --path /admin/users
+web mvc scaffold --class ~.web.admin.YstAccountController --backingType ~.domain.YstAccount --path /admin/accounts
+web mvc scaffold --class ~.web.admin.YstAnswerController --backingType ~.domain.YstAnswer --path /admin/answers
+web mvc scaffold --class ~.web.admin.YstUserCategoryController --backingType ~.domain.YstUserCategory --path /admin/usercategorys
+json all --deepSerialize
+web mvc json all --package ~.web.admin
+web mvc finder all
+security setup
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-07-07 19:00:03
+web mvc finder all
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-07-07 19:05:14
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-07-07 20:30:34
+finder list --class ~.domain.YstAccount
+finder add --finderName findYstAccountsByUsernameEquals --class ~.domain.YstAccount
