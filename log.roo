@@ -46,3 +46,7 @@ web mvc finder all
 // Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-07-07 20:30:34
 finder list --class ~.domain.YstAccount
 finder add --finderName findYstAccountsByUsernameEquals --class ~.domain.YstAccount
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-07-08 21:22:57
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-07-08 21:24:39
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-07-08 21:25:33
+// Spring Roo 1.2.4.RELEASE [rev 75337cf] log opened at 2013-07-08 21:26:29
